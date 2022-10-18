@@ -30,7 +30,7 @@ async function checkDuplicateEmail(req, res, next) {
     
     if (role !== "student" && role !== "tutor") {
         res.status(404).send({
-            "message": `Failed! ${role} doesn't exist`
+            "message": `Failed! Role ${role} doesn't exist`
         });
         return;
     }

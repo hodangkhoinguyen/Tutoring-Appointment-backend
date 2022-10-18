@@ -98,6 +98,8 @@ async function signIn(req, res, next) {
 
         res.json({
             id: user._id,
+            firstName: user.firstName,
+            lastName: user.lastName,           
             role: role,
             email: user.email,
             accessToken: token
